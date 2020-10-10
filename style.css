@@ -4,7 +4,7 @@ body{
 }
 /* Navbar */
 .navbar{
-  max-height: 57px; 
+  max-height: 60px; 
 }
 .navigation .navbar-brand{
   color: white; 
@@ -27,17 +27,6 @@ body{
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
   background-color:#E7E7E7 !important; 
 }
-a{
-  color: #6D8092;
-  font-size: 15px; 
-}
-.nav-link:hover{
-  background-color:#E7E7E7 !important;
- }
-
-.navbar-brand:hover{
-color: rgb(175, 175, 175) !important;
-}
 
 /*Images*/
 img{
@@ -54,12 +43,16 @@ img{
   height:50% !important;
 }
 
-/*Title*/
-.title{
-  color: #0BADA6;  
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bolder; 
-  padding-top: 25px; 
+a{
+  color: #6D8092;
+  font-size: 15px; 
+}
+.nav-link:hover{
+  background-color:#E7E7E7 !important;
+ }
+
+.navbar-brand:hover{
+color: rgb(175, 175, 175) !important;
 }
 
 /*Paragraph*/
@@ -69,9 +62,12 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 17px; 
 }
 
-/*Header 5*/
-h5 { 
-  text-align: center;    
+/*Title*/
+.title{
+  color: #0BADA6;  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder; 
+  padding-top: 25px; 
 }
 
 /*Box*/
@@ -83,11 +79,41 @@ h5 {
   background-color: white; 
 }
 
+/*Header 5*/
+h5 { 
+  text-align: center;    
+}
 /*Table*/
 .table{
   font-size: 15px; 
   border-top-color: white !important; 
 }
+
+/*Media Queries*/
+@media(max-width: 992px){
+  .navbar-expand-lg{
+  background-color: #0BADA6 !important;
+  }
+  .navbar{
+    max-height: none; 
+    padding: inherit;
+  }
+  .navbar div{
+    margin: inherit; 
+    background-color: white;  
+  }
+  .navbar-brand{
+    padding: 10px !important; 
+  }
+  
+  button{
+    margin-right: 30px; 
+  }
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focusring-color; 
+    }
+  }
 
 /*Footer*/
 footer{
@@ -105,30 +131,4 @@ left: 0;
 bottom: 0;
 width: 100%;
 padding-top: 15px; 
-}
-
-/*Media Queries*/
-@media(max-width: 992px){
-.navbar-expand-lg{
-background-color: #0BADA6 !important;
-}
-.navbar{
-  max-height: none; 
-  padding: inherit;
-}
-.navbar div{
-  margin: inherit; 
-  background-color: white;  
-}
-.navbar-brand{
-  padding: 10px !important; 
-}
-
-button{
-  margin-right: 30px; 
-}
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focusring-color; 
-  }
 }
